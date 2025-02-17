@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Beispiel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .footer {
+            background-color: #f2f2f2;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer-column ul li a:hover {
+            color: #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Lieferando.de</h3>
+            <ul>
+                <li><a href="#">Lieferando for Business</a></li>
+                <li><a href="#">Kundenservice</a></li>
+                <li><a href="#">Ein Geschäft empfehlen</a></li>
+                <li><a href="#">Ein Geschäft anmelden</a></li>
+                <li><a href="#">Fahrer*in werden</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>International</h3>
+            <ul>
+                <li><a href="#">Just Eat - UK</a></li>
+                <li><a href="#">Just Eat - France</a></li>
+                <li><a href="#">Lieferando.at</a></li>
+                <li><a href="#">Takeaway.com - Belgium</a></li>
+                <li><a href="#">Menulog - Australia</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Weitere Links</h3>
+            <ul>
+                <li><a href="#">AGB</a></li>
+                <li><a href="#">Datenschutzerklärung</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Verwendung von Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

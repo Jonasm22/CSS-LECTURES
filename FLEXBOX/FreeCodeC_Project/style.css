@@ -1,0 +1,88 @@
+/*Alinea tu texto .header en el centro. Pone el texto en mayúsculas usando la propiedad text-transform 
+con uppercase como valor.
+
+Dale un relleno de 32px en todos los lados. Establece el fondo en #0a0a23 y el texto en #fff como valores de color.
+
+Añade un border-bottom con 4px solid #fdb347 como valor*/
+
+*{
+    box-sizing: border-box;
+}
+    .header{
+        text-align: center;
+        text-transform: uppercase;
+        background-color:#119835 ;
+        padding: 32px;
+        color: #fff;
+        border-bottom: 4px solid #fdb347;
+    }
+
+    body{
+        margin: 0;
+        font-family: sans-serif;
+        background-color : #f5f6f7;
+    }
+
+    .gallery img{
+        width : 100%;
+        max-width : 350px;
+        height : 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items : center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .gallery::after{
+    content: "";
+    width : 350px;
+  }
+  footer {
+    background-color:#fdb347;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-left li, .footer-right li {
+    margin-bottom: 10px;
+}
+
+.footer-left a, .footer-right a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
