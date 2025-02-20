@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
     <link rel="stylesheet" href="styles.css">
-    <title>Accessibility Quiz</title>
+    <title>Accessibility Quiz</title> <!-- Título de la página -->
 
 </head>
 <body>
+  <!-- Encabezado de la página con logo y título -->
     <header>
         <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp" id="logo">
         <h1>HTML/CSS Quiz.</h1>
+        <!-- Menú de navegación -->
         <nav>
             <ul>
                 <li><a href="#student-info">INFO</a></li>
@@ -23,9 +25,11 @@
     </header>
     
     <main>
+      <!-- Formulario para enviar respuestas -->
     <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
         <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-            <section role="region" aria-labelledby="student-info">
+          <!-- Sección de información del estudiante -->
+          <section role="region" aria-labelledby="student-info">
               <h2 id="student-info">Student Info</h2>
               <div class="info">
                 <label for="student-name">Name:</label>
@@ -41,12 +45,13 @@
               </div>
             </section>
 
+            <!-- Sección de preguntas sobre HTML -->
+
         <section role="region" aria-labelledby="html-questions">
             <h2 id="html-questions">HTML</h2>
+              <!-- Pregunta 1 -->
             <div class="question-block">
-
               <h3><span class="sr-only">Question</span>1</h3>
-
                 <fieldset class="question" name="html-question-two">
                   <legend >The legend element represents a caption for the content of its
                     parent fieldset element</legend>
@@ -65,6 +70,8 @@
                   
                 </fieldset>
             </div>
+
+            <!-- Pregunta 2 -->
             <div class="question-block">
            
               <h3><span class="sr-only">Question</span>2</h3>
@@ -90,9 +97,11 @@
 
         </section>
 
+        <!-- Sección de preguntas sobre CSS -->
         <section role="region" aria-labelledby="css-questions">
             <h2 id="css-questions">CSS</h2>
             <div class="formrow">
+              <!-- Pregunta sobre valores negativos en margin -->
               <div class="question-block">
                 <label for="selector">Can the CSS margin property accept negative values?</label>
               </div>
@@ -106,6 +115,7 @@
                 </select>
                
               </div>
+              <!-- Pregunta abierta -->
               <div class="question-block">
                 <label for="css-textarea">Do you have any questions:</label>
               </div>
@@ -120,6 +130,7 @@
         
    </main>
 
+    <!-- Pie de página con dirección -->
    <footer>
     <address>
        <a href="https://code.visualstudio.com">Visual Studio Code</a> <br />
@@ -132,3 +143,4 @@
     
 </body>
 </html>
+
